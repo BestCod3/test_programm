@@ -1,30 +1,47 @@
+import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:test_programm/bottomBar/icons.bottomBar.dart';
 
-class BottomBar extends StatelessWidget {
+class BottomBar extends StatefulWidget {
   const BottomBar({Key? key}) : super(key: key);
 
   @override
+  State<BottomBar> createState() => _BottomBarState();
+}
+
+class _BottomBarState extends State<BottomBar> {
+  int _index = 0;
+
+  @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-          color: Colors.white,
-          border: Border(top: BorderSide(color: Colors.grey, width: 1))),
-      height: MediaQuery.of(context).size.height * 0.09,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          IconBottom(
-            icony: const Icon(Icons.home_rounded),
-            text: 'Главная',
-          ),
-          IconBottom(icony: const Icon(Icons.search), text: 'Поиск'),
-          IconBottom(icony: const Icon(Icons.shopping_cart), text: 'Корзина'),
-          IconBottom(
-              icony: const Icon(Icons.account_circle_outlined),
-              text: 'Аккаунт'),
-        ],
-      ),
+    return FloatingNavbar(
+      backgroundColor: Colors.transparent,
+      selectedBackgroundColor: Colors.indigo,
+      unselectedItemColor: Colors.grey,
+      selectedItemColor: Colors.white,
+      onTap: (int val) {
+        setState(() {
+          _index = val;
+        });
+      },
+      currentIndex: _index,
+      items: [
+        FloatingNavbarItem(
+          icon: Icons.home_rounded,
+          title: 'Главная',
+        ),
+        FloatingNavbarItem(
+          icon: Icons.search,
+          title: 'Поиск',
+        ),
+        FloatingNavbarItem(
+          icon: Icons.shopping_cart,
+          title: 'Корзина',
+        ),
+        FloatingNavbarItem(
+          icon: Icons.account_circle_outlined,
+          title: 'Аккаунт',
+        ),
+      ],
     );
   }
 }

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:test_programm/view/HomeView/homeController.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double height;
   CustomAppBar({Key? key, required this.height});
+  final HomeController _appBarController = Get.put(HomeController());
 
   @override
   Widget build(BuildContext context) {
@@ -18,22 +21,26 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Санкт-Петербург",
+                "Bishkek",
                 style: TextStyle(fontSize: 20, color: Colors.black),
               ),
               Text(
-                "12 августа, 2023",
+                "${_appBarController.dateTime.value}",
                 style: TextStyle(fontSize: 15, color: Colors.grey),
               ),
             ],
           ),
           actions: [
             Padding(
-              padding: const EdgeInsets.all(5.0),
-              child: Image.asset(
-                'assets/images/logo.png',
-              ),
-            ),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: InkWell(
+                  onTap: () {},
+                  child: const Icon(
+                    Icons.account_circle_sharp,
+                    size: 45,
+                    color: Colors.black54,
+                  ),
+                )),
           ],
         ),
       ],

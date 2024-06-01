@@ -53,8 +53,10 @@ class dishesOption extends StatelessWidget {
       onTap: onTap,
       child: Column(
         children: [
-          Image.asset(
+          Image.network(
             image,
+            height: 110,
+            width: 110,
           ),
           const SizedBox(
             height: 15,

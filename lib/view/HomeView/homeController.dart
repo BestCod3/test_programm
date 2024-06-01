@@ -1,15 +1,21 @@
-// import 'dart:convert';
-// import 'dart:developer';
+import 'dart:convert';
+import 'dart:developer';
 
-// import 'package:get/get.dart';
-// import 'package:get/get_state_manager/get_state_manager.dart';
-// import 'package:http/http.dart' as http;
+import 'package:get/get.dart';
+import 'package:get/get_rx/get_rx.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:http/http.dart' as http;
 
-// class HomeController extends GetxController {
-//   RxString homeText = ''.obs;
-//   RxString imageURL = ''.obs;
+class HomeController extends GetxController {
+  Rx<DateTime> dateTime = DateTime.now().obs;
 
-   // void initState() {
+  void getCurrentDateTime() {
+    dateTime(DateTime.now());
+  }
+  // RxString homeText = ''.obs;
+  // RxString imageURL = ''.obs;
+
+  //  void initState() {
   //   super.initState();
   //   showWeatherByLocation();
   // }
@@ -56,4 +62,4 @@
   //     // Обработка ошибок, например, отображение сообщения об ошибке
   //   }
   // }
-// }
+}

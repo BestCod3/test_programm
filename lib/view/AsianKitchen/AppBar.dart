@@ -1,27 +1,32 @@
 import 'package:flutter/material.dart';
 
-class Asian_kitchen_appbar extends StatelessWidget
-    implements PreferredSizeWidget {
-  const Asian_kitchen_appbar({super.key, required this.height});
+class FullAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const FullAppBar({super.key, required this.height, required this.text});
   final double height;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: AppBar(
+    return AppBar(
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: Colors.white,
         elevation: 0,
-        title: const Center(
+        title: Center(
           child: Text(
-            "Азиатская кухня",
-            style: TextStyle(color: Colors.black),
+            text,
+            style: const TextStyle(color: Colors.black),
           ),
         ),
-        actions: [Image.asset('assets/images/logo.png')],
-      ),
-    );
+        actions: const [
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Icon(
+              Icons.account_circle_sharp,
+              size: 45,
+              color: Colors.black54,
+            ),
+          )
+        ]);
   }
 
   @override

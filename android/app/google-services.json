@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "46956409741",
+    "project_id": "marketplace-d59a5",
+    "storage_bucket": "marketplace-d59a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46956409741:android:1bed8f2a2b0bb9ebd503c4",
+        "android_client_info": {
+          "package_name": "com.example.test_programm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT7NesWJb9OCM1jFZLfwq5ytwkuNzb-Xs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

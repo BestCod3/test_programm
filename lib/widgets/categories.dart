@@ -20,12 +20,12 @@ class Categories extends StatelessWidget {
           children: [
             Container(
               width: 400,
-              height: 148,
+              height: 120,
               decoration: BoxDecoration(
+                border: Border.all(color: Colors.black26),
                 image: DecorationImage(
-                  image: NetworkImage(
-                    urlImage,
-                  ),
+                  image: NetworkImage(urlImage,
+                      scale: kMiniButtonOffsetAdjustment),
 
                   // URL изображения
                   fit: BoxFit.scaleDown,

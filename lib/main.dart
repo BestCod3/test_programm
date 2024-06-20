@@ -27,14 +27,14 @@ class Main extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LandingView(),
+      home: const LandingView(),
       routes: {
-        '/home': (context) => HeadView(), //Главная
+        '/home': (context) => const HeadView(), //Главная
         '/search': (context) => HomeView(),
 
         '/cart': (context) =>
             CartPage(cart: cart), // Передайте объект cart в CartPage
-        '/profile': (context) => Profile(), //Профиль
+        '/profile': (context) => const Profile(), //Профиль
       },
     );
   }

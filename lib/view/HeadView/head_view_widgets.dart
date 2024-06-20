@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_programm/data/horizontal_list.dart';
 import 'package:test_programm/view/HeadView/purchasePage.dart';
 import '../../data/product.dart';
-import '../AsianKitchen/AppBar.dart';
+import '../marketView/AppBar.dart';
 import '../ProductDetails/cart_page.dart';
 
 class HeadViewWidget extends StatelessWidget {

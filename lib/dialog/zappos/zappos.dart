@@ -32,7 +32,7 @@ class ZapposDialog extends StatelessWidget {
                   "https://cdn6.aptoide.com/imgs/0/c/7/0c7696be11558c5a00b00daeb55db980_icon.png"),
               SizedBox(height: 16),
               Text(
-                'Amazon',
+                'Zappos',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,

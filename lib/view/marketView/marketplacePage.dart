@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_programm/bottomBar/bottomBar.dart';
-import 'package:test_programm/view/AsianKitchen/AppBar.dart';
-import 'package:test_programm/view/AsianKitchen/productCard_widgets.dart';
+import 'package:test_programm/view/marketView/AppBar.dart';
+import 'package:test_programm/view/marketView/productCard_widgets.dart';
 import 'package:test_programm/widgets/my_horizontal_categories.dart';
 import '../../widgets/listMenu.dart';
 
@@ -66,7 +66,7 @@ Dynamic AMOLED HDR10+''',
                 },
                 image2:
                     "https://stores.kg/_next/image?url=https%3A%2F%2Fdocs.stores.kg%2Fimages%2Fcategory_images%2F654b6ad7b6313_42.png&w=256&q=75",
-                text2: "Рыба с овощами \nи рисом",
+                text2: "...",
                 ontap2: () {},
               ),
               listMenu(
@@ -79,21 +79,21 @@ Dynamic AMOLED HDR10+''',
                   image2:
                       "https://stores.kg/_next/image?url=https%3A%2F%2Fdocs.stores.kg%2Fimages%2Fcategory_images%2F65449027a0d9d_frame-19.png&w=256&q=75",
                   ontap2: () {},
-                  text: "Тортеллини",
-                  text1: "Зеленый салат",
-                  text2: "Рулеты из \nветчины"),
+                  text: "...",
+                  text1: "...",
+                  text2: ""),
               listMenu(
                 ontap: () {},
                 image:
                     "https://stores.kg/_next/image?url=https%3A%2F%2Fdocs.stores.kg%2Fimages%2Fcategory_images%2F654490cbbb55e_frame-23.png&w=256&q=75",
-                text: "\nРис с овощами",
+                text: "...",
                 image1:
                     "https://stores.kg/_next/image?url=https%3A%2F%2Fdocs.stores.kg%2Fimages%2Fcategory_images%2F656c566422b60_253.png&w=256&q=75",
-                text1: "Салат по \nвосточному",
+                text1: "...",
                 ontap1: () {},
                 image2:
                     "https://stores.kg/_next/image?url=https%3A%2F%2Fdocs.stores.kg%2Fimages%2Fcategory_images%2F6544b3ea341b5_454.png&w=256&q=75",
-                text2: "Рыба с овощами \nи рисом",
+                text2: "...",
                 ontap2: () {},
               ),
               listMenu(
@@ -106,9 +106,9 @@ Dynamic AMOLED HDR10+''',
                   image2:
                       "https://stores.kg/_next/image?url=https%3A%2F%2Fdocs.stores.kg%2Fimages%2Fcategory_images%2F654b6ae0a5cc4_115.png&w=256&q=75",
                   ontap2: () {},
-                  text: "Тортеллини",
-                  text1: "Зеленый салат",
-                  text2: "Рулеты из \nветчины"),
+                  text: "...",
+                  text1: "...",
+                  text2: "..."),
             ],
           ),
         ),

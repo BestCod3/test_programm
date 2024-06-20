@@ -5,7 +5,7 @@ import 'package:test_programm/dialog/Amazon/card.dart';
 import 'package:test_programm/dialog/citrus/citrus_dialog.dart';
 import 'package:test_programm/dialog/rozetka/rozetka.dart';
 import 'package:test_programm/dialog/zappos/zappos.dart';
-import 'package:test_programm/view/AsianKitchen/marketplacePage.dart';
+import 'package:test_programm/view/marketView/marketplacePage.dart';
 import '../../appBar/customAppBar.dart';
 import '../../bottomBar/bottomBar.dart';
 import '../../widgets/categories.dart';

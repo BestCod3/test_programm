@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:test_programm/dialog/Amazon/AmazonView.dart';
-import 'package:test_programm/view/AsianKitchen/card_controller.dart';
+import 'package:test_programm/view/marketView/card_controller.dart';
 import 'package:test_programm/view/ProductDetails/product_details_page.dart';
 
 import '../HeadView/head_view_widgets.dart';

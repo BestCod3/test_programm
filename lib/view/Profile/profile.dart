@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:test_programm/appBar/customAppBar.dart';
 import 'package:test_programm/bottomBar/bottomBar.dart';
-import 'package:test_programm/view/AsianKitchen/AppBar.dart';
+import 'package:test_programm/view/marketView/AppBar.dart';
 import 'package:test_programm/view/SignUp/controller.dart';
 
 class Profile extends StatefulWidget {

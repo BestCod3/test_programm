@@ -32,7 +32,7 @@ class RozetkaDialog extends StatelessWidget {
                   "https://yt3.googleusercontent.com/sMOdbRU1Bu3_I3Zm5dS2pJ6xOC31z7oFr5JH-nvK7qSVdYRyA4bVkEbr--69g0sOz8ELpef6Zw=s900-c-k-c0x00ffffff-no-rj"),
               const SizedBox(height: 16),
               const Text(
-                'Цитрус',
+                'Розетка',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,

@@ -93,11 +93,13 @@ class _PurchasePageState extends State<PurchasePage> {
                   height: 200,
                   color: Colors.grey.shade200,
                   child: const Center(
-                    child: Text(
-                      'QR-код для оплаты',
-                      style: TextStyle(fontSize: 18, color: Colors.black54),
-                    ),
-                  ),
+                      child: Image(image: AssetImage("assets/images/qr.jpg"))
+
+                      // child: Text(
+                      //   'QR-код для оплаты',
+                      //   style: TextStyle(fontSize: 18, color: Colors.black54),
+                      // ),
+                      ),
                 ),
               ),
             const SizedBox(height: 16),

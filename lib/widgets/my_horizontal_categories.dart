@@ -54,7 +54,7 @@
 // }
 import 'package:flutter/material.dart';
 import 'package:test_programm/buttons/categoryButton.dart';
-import 'package:test_programm/view/AsianKitchen/marketplacePage.dart';
+import 'package:test_programm/view/marketView/marketplacePage.dart';
 
 Color inactiveColor = Color.fromRGBO(248, 247, 245, 1);
 Color activeColor = Colors.blue;
